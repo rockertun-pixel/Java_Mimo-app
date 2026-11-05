@@ -19,7 +19,7 @@ abstract final class AppTheme {
       fontFamily: 'NotoSansMyanmar',
       scaffoldBackgroundColor:
           isDark ? const Color(0xFF111827) : const Color(0xFFF8FAFC),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         elevation: 0,
         margin: EdgeInsets.zero,
         color: isDark ? const Color(0xFF1F2937) : Colors.white,
