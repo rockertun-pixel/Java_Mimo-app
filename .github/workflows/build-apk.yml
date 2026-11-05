@@ -39,7 +39,22 @@ jobs:
         run: flutter analyze lib --no-fatal-warnings --no-fatal-infos
 
       - name: Build universal release APK
-        run: flutter build apk --release
+        shell: bash
+        run: |
+          for attempt in 1 2 3; do
+            echo "Build attempt $attempt of 3"
+            if flutter build apk --release; then
+              exit 0
+            fi
+
+            if [ "$attempt" -lt 3 ]; then
+              echo "Build failed. Waiting 30 seconds before retry..."
+              sleep 30
+            fi
+          done
+
+          echo "APK build failed after 3 attempts."
+          exit 1
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
