@@ -1,0 +1,35 @@
+[
+  {
+    "id": "java",
+    "languageName": "Java",
+    "subtitleMyanmar": "Java ကို Variables မှ OOP အထိ အဆင့်လိုက် လေ့လာပါ",
+    "level": "Beginner to Advanced",
+    "lessonIds": [
+      "java-001", "java-002", "java-003", "java-004", "java-005",
+      "java-006", "java-007", "java-008", "java-009", "java-010",
+      "java-011", "java-012", "java-013", "java-014", "java-015",
+      "java-016"
+    ]
+  },
+  {
+    "id": "html",
+    "languageName": "HTML",
+    "subtitleMyanmar": "Web page တည်ဆောက်ခြင်း၏ အခြေခံကို လေ့လာပါ",
+    "level": "Beginner",
+    "lessonIds": []
+  },
+  {
+    "id": "python",
+    "languageName": "Python",
+    "subtitleMyanmar": "Python programming ၏ အခြေခံများကို လေ့လာပါ",
+    "level": "Beginner",
+    "lessonIds": []
+  },
+  {
+    "id": "dart",
+    "languageName": "Dart",
+    "subtitleMyanmar": "Flutter အတွက် Dart language ကို လေ့လာပါ",
+    "level": "Beginner",
+    "lessonIds": []
+  }
+]
